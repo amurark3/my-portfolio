@@ -40,7 +40,7 @@ export function SkillsSection() {
                                 key={idx}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
+                                viewport={{ once: true, margin: "0px" }}
                                 transition={{ delay: idx * 0.1 }}
                                 className="glass-card p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/50 transition-colors"
                             >

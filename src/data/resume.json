@@ -72,35 +72,98 @@
       "context": "Test coverage using the Jest framework."
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "title": "F1 AI",
+      "location": "Arizona State University, Tempe, AZ",
+      "dates": "May 2025 – Jul 2025",
+      "url": "https://f1-ai-delta.vercel.app",
+      "bullets": [
+        "Developed an AI-powered Formula 1 race engineer assistant using Next.js, FastAPI, and Tailwind CSS, featuring a natural language chatbot that leverages an MCP server to dynamically invoke backend tools for race schedules, standings, session results, and driver comparisons."
+      ]
+    },
+    {
+      "title": "Gotham Watch – Crime Analysis Platform",
+      "location": "Arizona State University, Tempe, AZ",
+      "dates": "Oct 2024 – Dec 2024",
+      "url": "https://github.com/amurark3/gotham-watch",
+      "bullets": [
+        "Built an interactive crime analysis platform using Python, React.js, and GraphDB, leading data preprocessing, backend architecture with Flask and SPARQL queries, dynamic visualizations, and deployment on Microsoft Azure for scalable real-time access."
+      ]
+    }
+  ],
   "skills": [
     {
       "category": "Languages",
-      "items": ["JavaScript", "TypeScript", "Python", "Java", "SQL", "SPARQL"]
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "SQL",
+        "SPARQL"
+      ]
     },
     {
       "category": "AI/ML",
-      "items": ["Model Context Protocol (MCP)", "Retrieval-Augmented Generation (RAG)", "PyTorch", "NumPy", "Pandas", "Agentic AI"]
+      "items": [
+        "Model Context Protocol (MCP)",
+        "Retrieval-Augmented Generation (RAG)",
+        "PyTorch",
+        "NumPy",
+        "Pandas",
+        "Agentic AI"
+      ]
     },
     {
       "category": "Frontend",
-      "items": ["Next.js", "React.js", "Redux", "Tailwind CSS", "Storybook", "Chart.js"]
+      "items": [
+        "Next.js",
+        "React.js",
+        "Redux",
+        "Tailwind CSS",
+        "Storybook",
+        "Chart.js"
+      ]
     },
     {
       "category": "Backend",
-      "items": ["FastAPI", "Flask", "Spring Boot", "Node.js", "REST APIs", "WebSockets"]
+      "items": [
+        "FastAPI",
+        "Flask",
+        "Spring Boot",
+        "Node.js",
+        "REST APIs",
+        "WebSockets"
+      ]
     },
     {
       "category": "Tools & Infrastructures",
-      "items": ["Microsoft Azure", "Kafka", "GraphDB", "Postman", "JWT", "Git", "WSL"]
+      "items": [
+        "Microsoft Azure",
+        "Kafka",
+        "GraphDB",
+        "Postman",
+        "JWT",
+        "Git",
+        "WSL"
+      ]
     },
     {
       "category": "Testing & Analytics",
-      "items": ["Jest", "React Testing Library", "Adobe Analytics", "Google Analytics"]
+      "items": [
+        "Jest",
+        "React Testing Library",
+        "Adobe Analytics",
+        "Google Analytics"
+      ]
     },
     {
       "category": "Spoken Languages",
-      "items": ["English (Native or Bilingual)", "Hindi (Native or Bilingual)"]
+      "items": [
+        "English (Native or Bilingual)",
+        "Hindi (Native or Bilingual)"
+      ]
     }
   ],
   "education": [
@@ -114,7 +177,7 @@
       "institution": "Manipal University Jaipur",
       "degree": "BTech - Bachelor of Technology, Computer Science",
       "dates": "2015 - 2019",
-      "location": ""
+      "location": "Jaipur, Rajasthan, India"
     }
   ],
   "certifications": [
@@ -124,7 +187,12 @@
     "Machine Learning",
     "The Data Scientist's Toolbox"
   ],
-  "awards": [],
+  "awards": [
+    "Excellence award recipient at Walmart Global Tech India for outstanding performance in developing Omni Item Allocation features, performance optimizations, and implementing comprehensive analytics tracking (May 2023)",
+    "Spotlight award winner for outstanding project execution and team collaboration at Nineleaps (Mar 2021)",
+    "Hackathon champion ”Million Dollar Idea” award for innovative business solution at Nineleaps (Jun 2019)",
+    "Multiple ”Feather on the Hat” awards for consistent high performance and exemplary work quality at Nineleaps"
+  ],
   "extra": [
     "Graduating May 2026",
     "Top Skills: Software Development, Back-End Web Development, Full-Stack Development"

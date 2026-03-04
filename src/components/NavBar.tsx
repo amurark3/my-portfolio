@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import resumeData from "@/data/resume.json";
-import { Home, Briefcase, Trophy, Code2, GraduationCap } from "lucide-react";
+import { Home, Briefcase, FolderGit2, Trophy, Code2, GraduationCap } from "lucide-react";
 
 const navItems = [
     { id: "hero", icon: Home, label: "Home" },
     { id: "experience", icon: Briefcase, label: "Experience" },
+    { id: "projects", icon: FolderGit2, label: "Projects" },
     { id: "achievements", icon: Trophy, label: "Achievements" },
     { id: "skills", icon: Code2, label: "Skills" },
     { id: "education", icon: GraduationCap, label: "Education" },
@@ -45,7 +46,7 @@ export function NavBar() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 glass rounded-full p-2 border border-white/10 flex items-center gap-2 shadow-2xl"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] bg-gray-950/80 backdrop-blur-2xl rounded-full p-2 border border-white/20 flex items-center gap-2 shadow-[0_0_30px_rgba(0,0,0,0.5)]"
         >
             {navItems.map((item) => {
                 const isActive = activeSection === item.id;

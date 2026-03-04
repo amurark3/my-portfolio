@@ -5,6 +5,7 @@ import { Splash } from "@/components/Splash";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { HeroSection } from "@/components/HeroSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
 import { AchievementsSection } from "@/components/AchievementsSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { EducationSection } from "@/components/EducationSection";
@@ -28,6 +29,10 @@ export default function Home() {
 
           <div id="experience">
             <ExperienceSection />
+          </div>
+
+          <div id="projects">
+            <ProjectsSection />
           </div>
 
           <div id="achievements">

@@ -30,7 +30,7 @@ export function Splash({ onComplete }: { onComplete: () => void }) {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-6xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-8"
                 >
-                    AM
+                    Unlocking greatness
                 </motion.div>
 
                 {/* Loading Bar Container */}

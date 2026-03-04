@@ -5,9 +5,10 @@ import { Award, Trophy, Star } from "lucide-react";
 import resumeData from "@/data/resume.json";
 
 export function AchievementsSection() {
-    const { achievements } = resumeData;
+    const achievements = resumeData.achievements || [];
+    const awards = resumeData.awards || [];
 
-    if (!achievements || achievements.length === 0) return null;
+    if (achievements.length === 0 && awards.length === 0) return null;
 
     return (
         <section className="py-24 px-6 relative z-10 bg-gradient-to-b from-transparent to-blue-900/10">
@@ -30,7 +31,7 @@ export function AchievementsSection() {
                             key={idx}
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true, margin: "-50px" }}
+                            viewport={{ once: true, margin: "0px" }}
                             transition={{ delay: idx * 0.1, duration: 0.4 }}
                             whileHover={{ y: -5 }}
                             className="glass-card p-6 rounded-2xl relative overflow-hidden group border border-purple-500/20 hover:border-purple-400/50"
@@ -54,7 +55,31 @@ export function AchievementsSection() {
                         </motion.div>
                     ))}
                 </div>
-            </div>
-        </section>
+
+                {
+                    awards.length > 0 && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "0px" }}
+                            className="mt-16"
+                        >
+                            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                                <Star className="w-6 h-6 text-yellow-400 fill-yellow-400/20" />
+                                Awards & Recognitions
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {awards.map((award, idx) => (
+                                    <div key={idx} className="glass-card p-5 rounded-xl border border-yellow-500/20 flex gap-4 items-start">
+                                        <div className="mt-1 w-2 h-2 rounded-full bg-yellow-500 flex-shrink-0 shadow-[0_0_8px_rgba(234,179,8,0.6)]" />
+                                        <p className="text-sm text-gray-300 leading-relaxed">{award}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    )
+                }
+            </div >
+        </section >
     );
 }

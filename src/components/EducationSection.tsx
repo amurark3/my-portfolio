@@ -30,7 +30,7 @@ export function EducationSection() {
                                 key={idx}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
+                                viewport={{ once: true, margin: "0px" }}
                                 transition={{ delay: idx * 0.1 }}
                                 className="glass-card p-6 rounded-2xl border border-emerald-500/20 hover:border-emerald-400/50 transition-colors"
                             >
@@ -67,7 +67,7 @@ export function EducationSection() {
                                 key={idx}
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true, margin: "-50px" }}
+                                viewport={{ once: true, margin: "0px" }}
                                 transition={{ delay: idx * 0.1 }}
                                 className="glass-card p-4 rounded-xl flex items-center gap-3 border border-amber-500/20 hover:border-amber-400/50"
                             >
